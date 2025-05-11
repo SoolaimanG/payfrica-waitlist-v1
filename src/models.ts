@@ -20,6 +20,7 @@ const WaitlistSchema = new Schema<IWaitlist>(
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/,
         "Sorry, we were unable to add you to our waitlist, Invalid email address.",
       ],
+      lowercase: true,
     },
     hasSendWelcomeEmail: {
       type: Boolean,
